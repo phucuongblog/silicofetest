@@ -1,0 +1,80 @@
+.navbar-nav {
+	.nav-item {
+		.badge {
+			position: absolute;
+		}
+	}
+}
+.dropdown-menu-right {
+	right: 0;
+}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	.sidebar {
+		width: 225px;
+		background: #212529;
+		min-height: calc(100vh - 51px);
+		.nav-item {
+			.nav-link {
+				display: block;
+			    text-align: left;
+			    padding: 1rem;
+			    width: 225px;
+			    color: rgba(255, 255, 255, 0.5);
+			}
+			&.active, &:hover {
+				.nav-link {
+					color: #fff;
+				}
+			}
+		}
+	}
+	.content-wrapper {
+		overflow-x: hidden;
+	    width: 100%;
+	    padding-top: 1rem;
+	    padding-bottom: 1rem;
+	}
+}
+.add-new {
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+.card {
+	overflow: hidden;
+	.card-body-icon {
+	    position: absolute;
+	    z-index: 0;
+	    top: -1.25rem;
+	    right: -1rem;
+	    opacity: 0.4;
+	    font-size: 5rem;
+	    transform: rotate(15deg);
+	    transition: 0.3s;
+	}
+	&:hover {
+		.card-body-icon {
+			font-size: 5.5rem;
+		}
+	}
+}
+.card-footer {
+	z-index: 1;
+}
+.table {
+	td, th {
+		vertical-align: middle;
+	}
+}
+.login {
+	height: 100vh;
+	.card {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 99;
+	}
+}
